@@ -6,6 +6,7 @@ import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.midas.module.base.base.BaseActivity;
+import com.midas.module.base.utils.ModuleRouteService;
 import com.midas.module.base.utils.RouteUtils;
 
 
@@ -32,6 +33,6 @@ public class GoodDetailActivity extends BaseActivity {
         Intent intent = getIntent();
         String goodName = intent.getStringExtra("goodName");
         tvGoodName.setText(goodName);
-        //tv_address.setText("用户所在地址:"+ ModuleRouteService.getUserAddress("123"));
+        tv_address.setText("用户所在地址:"+ ModuleRouteService.getUserAddress("123"));
     }
 }
